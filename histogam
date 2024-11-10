@@ -1,0 +1,12 @@
+import numpy as np
+import matplotlib.pyplot as plt
+data1=np.random.normal(2.0,3.0,1000)
+plt.subplot(1,2,1)
+plt.hist(data1,bins=20,density='true')
+plt.xlabel('value')
+plt.ylabel('probability')
+plt.subplot(1,2,2)
+plt.hist(data1,bins=20,histtype='step')
+plt.xlabel('value')
+plt.ylabel('probability')
+plt.show()
